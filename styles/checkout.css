@@ -1,0 +1,99 @@
+.nbrOfItemsBox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.grids-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
+}
+
+
+
+.grid-container,
+.payment-summary {
+    padding: 12px;
+    border: solid 0.01px rgb(248, 182, 151);
+}
+
+.product-container {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Product-infos {
+    flex: 1;
+}
+
+.product-image {
+    width: 140px;
+    height: 170px;
+    border-radius: 10px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.empty-bascket-text {
+    font-size: x-large;
+    font-style: italic;
+}
+
+.payment-summary {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+}
+
+.payment-summary-title {
+    font-style: italic;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+.total-products,
+.shipping-total,
+.total-amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.place-order-button {
+    margin-top: 12px;
+    width: 150px;
+    height: 35px;
+    text-wrap: nowrap;
+    border-radius: 5px;
+    border: 1px solid rgb(240, 168, 135);
+    background-color: rgb(253, 200, 169);
+    cursor: pointer;
+    font-style: italic;
+}
+
+.remove-item {
+    margin-top: 12px;
+    width: 70px;
+    border-radius: 35px;
+    font-size: x-large;
+    color: rgb(190, 50, 25);
+    text-wrap: nowrap;
+    border: 1px solid rgb(240, 168, 135);
+    background-color: rgb(253, 200, 169);
+    cursor: pointer;
+    font-style: italic;
+}
+
+@media (max-width: 750px) {
+
+    .grids-container {
+        grid-template-columns: 1fr;
+        /* this says when the page is at 750px or less show only 2 products pr row */
+    }
+
+}

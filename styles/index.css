@@ -1,0 +1,45 @@
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 750px) {
+    
+    .category-grid {
+        flex-direction: column;
+        /* When the page is at 750px or less switch to flex colunbs */
+        gap: 12px;
+    }
+
+    .brand-name-container {
+
+        display: none;
+
+     }
+}
+
+.category-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+}
+
+.category-img {
+    width: 100%;
+    height: 400px;
+    /* 0 for horizontal and vertical offsets, the shadow spreads evenly all around the element. */
+    box-shadow: 0 0 10px rgba(56, 33, 33, 0.5);
+    object-fit: cover;
+}
+
+.image-title {
+  font-weight: 500;
+  font-style: italic;
+}
+

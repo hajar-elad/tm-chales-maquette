@@ -1,0 +1,117 @@
+.main {
+    padding: 32px;
+    padding-top: 21px;
+}
+
+.grids-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.billing-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+} 
+
+.billing,
+.payement,
+.email,
+.payement,
+.billing-adress {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    border-radius: 12.5px;
+    border: none;
+}
+
+.adress {
+    width: 420px;
+}
+
+.email-input {
+    width: 250px;
+}
+
+.mode-payment{
+    background-color: blanchedalmond;
+}
+
+.submit-button {
+    width: 105px;
+    height: 29px;
+    border-radius: 5px;
+    /*border: none;
+    */
+    border: 1px solid rgb(219, 140, 103);
+    background-color: rgb(253, 200, 169);
+    cursor: pointer;
+    font-style: italic;
+}
+
+.recap-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 12px;
+}
+
+@media (max-width: 750px) {
+
+    .recap-cart {
+       display: none;
+        /* this says when the page is at 750px or less show only 2 products pr row */
+    }
+
+    .submitted{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+.cart-items {
+    display: flex;
+    column-gap: 10px;
+}
+
+.product-image {
+    width: 70px;
+    height: 100px;
+    border-radius: 10px;
+    border: solid 0.01px rgb(209, 158, 135);
+    cursor: pointer;
+}
+
+.payment-summary {
+    display: flex;
+    font-size: 17px;
+}
+
+.total-cart {
+    font-style: italic;
+}
+
+.submitted {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 300px;
+    color: rgb(219, 140, 103);
+    font-size: xx-large;
+}
+
+.submitted-image {
+    height: 250px;
+}
+
+.submitted-text{
+text-wrap: nowrap;
+}

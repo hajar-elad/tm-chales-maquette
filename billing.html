@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TM-chales CheckOut</title>
+ 
+    
+    <script type="module" src="scripts/checkout/billing.js" defer></script>
+
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="shared/header.css">
+    <link rel="stylesheet" href="shared/general.css">
+    <link rel="stylesheet" href="styles/billing.css">
+    <link rel="stylesheet" href="shared/menuBar.css">
+    <link rel="stylesheet" href="shared/modals.css">
+    <link rel="stylesheet" href="shared/footer.css">
+</head>
+
+<body>
+ 
+    <div class="header">
+        <div class="header-left-section">
+            <a href="index.html" class="header-link">
+                <img class="logo" src="images/logo.png">
+            </a>
+            <div class="brand-name-container">
+                <div class="brand-name">TM </div>
+                <div class="brand-name-suite">chales </div>
+            </div>
+        </div>
+
+        <div class="header-middle-section">
+           <!-- <input class="search-bar" type="text" placeholder="Search">
+            <button class="searchButton">
+                <img class="searchIcon" src="images/icons/searchIcon.png">
+            </button>-->
+        </div>
+
+        <div class="header-right-section">
+            <!--<div>Cart</div>
+            <a class="cart-link header-link" href="checkout.html">
+                <img class="cartIcon" src="images/icons/cartIcon.png">
+                <div class="cart-quantity"></div>-->
+            </a>
+        </div> 
+    </div>
+
+    <div class="menu-bar">
+    <a href="index.html" class="home-link">Acceuil</a>
+    <a href="jerseyChales.html">Chales Jersey</a>
+    <a href="chalesAMotifs.html">Chales A Motifs</a>
+    <a href="foulardsAMotifs.html">Foulard A Motifs</a>
+    </div>
+
+    <div class="main">
+       <!-- display nbr of items
+        <div class="nbrOfItemsBox">
+            <div class="js-cart-quantity"></div>
+            <div class="items"> -Produits</div>
+        </div>-->
+        <div class="grids-container">
+            <form action="order-sent.html" method="GET" class="billing-infos">
+                <div class="email">
+                    <label>Contact:</label>
+                    <input type="email" class="email js-email" placeholder="Adresse E-mail" required> 
+                </div>
+                <div class="billing">
+                    <label class="bTitle">Livraison:</label>
+                    <div class="name">
+                        <input type="text" class="f-name js-l-name" placeholder="Nom" required>  
+                        <input type="text" class="l-name js-f-name" placeholder="Prenom" required> 
+                    </div>
+                    <input type="text" class="adress js-adress" placeholder="Adresse" required> 
+                    <input type="text" class="city js-city" placeholder="ville" required> 
+                    <input type="text" class="postal-code js-postal-code" placeholder="Code Postal" required> 
+                    <input type="text" class="number js-number" placeholder="Telephone" required>
+                     
+                </div>
+                <div class="payement">
+                    <label>Mode De Payement:</label>
+                    <input type="text" class="mode-payment" value="Payement A La Livraison" readonly> 
+                </div>
+                <div class="billing-adress">
+                    <label>Adresse De Facturation:</label>
+                    <input type="text" class="billing-adress" placeholder="Adresse De Facturation" required> 
+                </div>
+                <button type="submit" class="submit-button js-submit-button">Valider</button>
+            </form>
+            <div class="recap-cart">
+                <div class="cart-items">
+                      
+                </div>
+                <div class="payment-summary">render payement</div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="contact">
+            <div class="contact-text">Contactez-nous</div>
+            <div class="contact-number">
+                <img class="phone-icon" src="images/icons/phoneIcon.png"></img>
+                <div>0613-33-79-96</div>
+            </div>
+            <div class="contact-mail">
+                <img class="mail-icon" src="images/icons/mailIcon.png"></img>
+                <div>tm-chales@gmail.com</div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright © 2025, tm-chales.ma tous droits réservés.
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+.footer {
+    margin: 3px;
+    border-top: solid 0.01px rgb(255, 209, 188);
+    background-color: rgb(245, 177, 145);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    padding: 19px;
+}
+
+.contact-text {
+    text-decoration: solid;
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: smaller;
+    padding-right: 7px;
+    padding-bottom: 17px;
+}
+
+.contact-number,
+.contact-mail {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.phone-icon,
+.mail-icon {
+    width: 30px;    
+}

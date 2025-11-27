@@ -1,0 +1,81 @@
+.product-image {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 3px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.04);
+    /* Enlarges the image on hover */
+}
+
+.product-infos {
+    font-style: italic;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 15px;
+    text-align: center;
+}
+
+@media (max-width: 549px) {
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 750px) {
+
+        .brand-name-container {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        /* this says when the page is at 750px or less show only 2 products pr row */
+    }
+
+    @media (max-width: 750px) {
+
+        .brand-name-container {
+            display: none;
+        }
+    }
+
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* this says when the page is at 1000 px or more show 4 products pr row */
+    }
+}
+
+.product-container {
+    padding: 3px;
+}
+
+.add-to-cart-btn {
+    border-radius: 5px;
+    border: none;
+    background-color: bisque;
+    cursor: pointer;
+}
