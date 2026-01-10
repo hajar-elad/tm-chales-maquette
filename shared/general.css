@@ -5,9 +5,8 @@ body{
     font-family: 'Times New Roman', Times, serif;
     position: relative; 
     background-image: linear-gradient(to right, rgb(245, 177, 145),rgb(243, 189, 164), rgb(250, 250, 252)); 
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    /* Prevents the image from repeating */
     background-size: cover; /* Scales the image to cover the entire background */
-    background-attachment: fixed; 
 }
 
 .main {
@@ -19,4 +18,5 @@ body{
  a:link, a:visited { 
     color: rgb(34, 3, 2);
  }
+
  
